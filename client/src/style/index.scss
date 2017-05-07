@@ -1,0 +1,77 @@
+/*Import Lato font-family from Google fonts*/
+@import url('https://fonts.googleapis.com/css?family=Lato');
+/*********************************************
+**********************************************
+**Styling for the form page 				**
+**											**
+**********************************************
+
+/*Reset for all pages*/
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: 'Lato', sans-serif, Helvetica;
+
+}
+
+/*All styling for the header including navigations*/
+.frsc-logo{
+	width: 60px;
+	border-radius: 50%;
+	position: relative;
+		
+}
+
+
+/**This Sections covers styling for the new application form*/
+legend{
+	font-size: 1.2em;
+	font-weight: bold;
+	background-color: rgba(0,70,120,0.4);
+	border-radius: 3px;
+}
+
+.form-page{
+	margin: 10% 20%;
+	border:1px solid black;
+	border-radius: 5px;
+	padding: 50px 80px;
+
+}
+.new-user-reg{
+	clear: both;
+	width: auto;
+}
+
+
+.form-heading{
+	margin: auto;
+}
+
+input{
+	margin: auto;
+	border-radius: 2px;
+	
+}
+
+label{
+	text-align: left;
+	padding-left: 20px;
+}
+
+button{
+	margin: auto;
+	text-align: center;
+	border: 1px solid black;
+	border-radius: 3px;
+	color: #fff;
+	background-color: #c2b280;
+}
+
+.base-links{
+	margin: 0px 20px;
+	
+}
