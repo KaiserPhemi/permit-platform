@@ -1,0 +1,20 @@
+{
+  "name": "permit-platform",
+  "version": "1.0.0",
+  "description": "This is a repo for a licensing web-app. A final year project for my post graduate.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KaiserPhemi/permit-platform.git"
+  },
+  "keywords": [],
+  "author": "Oluwafemi Akinwa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KaiserPhemi/permit-platform/issues"
+  },
+  "homepage": "https://github.com/KaiserPhemi/permit-platform#readme"
+}
