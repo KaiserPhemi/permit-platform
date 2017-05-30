@@ -4,7 +4,8 @@
   "description": "This is a repo for a licensing web-app. A final year project for my post graduate.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "",
+    "start": ""
   },
   "repository": {
     "type": "git",
