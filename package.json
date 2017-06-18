@@ -4,8 +4,17 @@
   "description": "This is a repo for a licensing web-app. A final year project for my post graduate.",
   "main": "index.js",
   "scripts": {
-    "test": "",
-    "start": ""
+    "test": "npm run test:client && npm run test:server",
+    "start": "",
+    "test:client": "",
+    "test:server": "",
+    "cover:client": "NODE_ENV=test babel-node node_modules/babel-istanbul/lib/cli.js cover node_modules/mocha/bin/_mocha -- client/test/**/*.js --timeout 15000",
+    "cover:server": "NODE_ENV=test babel-node node_modules/babel-istanbul/lib/cli.js cover node_modules/mocha/bin/_mocha -- server/test/**/*.js --timeout 15000",
+    "coverage:client": "npm run cover:client && codecov -t `token`",
+    "coverage:server": "npm run cover:server && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
+    "lint:client": "node_modules/.bin/eslint client/",
+    "lint:server": "node_modules/.bin/eslint server/",
+    "linting": "npm run lint:server && npm run lint:client"
   },
   "repository": {
     "type": "git",
