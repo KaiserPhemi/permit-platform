@@ -1,20 +1,27 @@
 import React, { Component } from 'react';
 
+import NavigationBar from './shared/NavigationBar';
+import FooterPage from './shared/FooterPage';
 /**
- * Defined as class component
+ * 
  */
 class App extends Component {
-    constructor(props) {
-
-    }
-    /**
-     * Handles redering to the DOM
-     * @return {Object}
-     */
-    render() {
-        return (
-            
-        );
-    }
-
+  /**
+   * Renders to the DOM
+   */
+  render() {
+    return (
+      <div>
+        <NavigationBar />
+        <main>{this.props.children}</main>
+        <FooterPage />
+      </div>
+    );
+  }
 }
+
+App.propTypes = {
+  children: React.PropTypes.object.isRequired
+};
+
+export default App;
