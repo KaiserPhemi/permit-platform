@@ -1,0 +1,17 @@
+**/*{.,-}min.js
+webpack.config.js
+karma.conf.js
+docs/
+db/
+client/test
+client/api_docs
+client/build
+node_modules/
+coverage/
+server/test
+TestSetup.js
+testSetup.js
+server/test
+nightwatch.conf.js
+screenshots/
+reports/
