@@ -1,32 +1,33 @@
 {
-  "name": "permit-platform",
+  "name": "reflow",
   "version": "1.0.0",
-  "description": "This is a repo for a licensing web-app. A final year project for my post graduate.",
+  "description": "reflow Workflow Management System",
   "main": "index.js",
   "scripts": {
     "test": "npm run test:client && npm run test:server",
     "start": "",
     "test:client": "",
     "test:server": "",
-    "cover:client": "NODE_ENV=test babel-node node_modules/babel-istanbul/lib/cli.js cover node_modules/mocha/bin/_mocha -- client/test/**/*.js --timeout 15000",
-    "cover:server": "NODE_ENV=test babel-node node_modules/babel-istanbul/lib/cli.js cover node_modules/mocha/bin/_mocha -- server/test/**/*.js --timeout 15000",
+    "cover:client": "NODE_ENV=test babel node_modules/babel-istanbul/lib/cli.js cover node_modules/mocha/bin/_mocha -- client/test/**/*.js --timeout 15000",
+    "cover:server": "NODE_ENV=test babel node_modules/babel-istanbul/lib/cli.js cover node_modules/mocha/bin/_mocha -- server/test/**/*.js --timeout 15000",
     "coverage:client": "npm run cover:client && codecov -t a910ca76-0d64-40f1-96b6-85cb489ae6e0",
     "coverage:server": "npm run cover:server && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
+    "jsdoc": "jsdoc -c conf.json",
     "lint:client": "node_modules/.bin/eslint client/",
     "lint:server": "node_modules/.bin/eslint server/",
     "linting": "npm run lint:server && npm run lint:client"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/KaiserPhemi/permit-platform.git"
+    "url": "git+https://github.com/KaiserPhemi/reflow.git"
   },
   "keywords": [],
   "author": "Oluwafemi Akinwa",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/KaiserPhemi/permit-platform/issues"
+    "url": "https://github.com/KaiserPhemi/reflow/issues"
   },
-  "homepage": "https://github.com/KaiserPhemi/permit-platform#readme",
+  "homepage": "https://github.com/KaiserPhemi/reflow#readme",
   "devDependencies": {
     "babel-core": "^6.24.1",
     "babel-eslint": "^7.2.3",
